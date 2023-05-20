@@ -1,0 +1,4 @@
+Star Trek;1982;Ficção científica;120;5
+Tootsie;1985;Comédia romântica;110;4
+Loucademia de polícia;1980;Comédia;115;3
+Star Wars;1977;Ficção científica;149;4

@@ -1,0 +1,177 @@
+Walmir
+
+post 
+https://projetobanco-production.up.railway.app/clientes
+
+{
+    "nomeCliente": "Professor Isidro",
+    "cpfCliente": "123456789-89",
+    "telefoneCliente": "11987654321"
+}
+
+{
+    "nomeCliente": "Carina YellowBelt",
+    "cpfCliente": "321654987-78",
+    "telefoneCliente": "11987644321"
+}
+
+{
+    "nomeCliente": "Carlinhos durango da Silva",
+    "cpfCliente": "321456987-78",
+    "telefoneCliente": "11967844321"
+}
+
+
+---------------------------------------------------------
+Listar todos os cliente 
+https://projetobanco-production.up.railway.app/clientes
+
+---------------------------------------------------------
+Listar cliente por id /clientes/id
+
+https://projetobanco-production.up.railway.app/clientes/1
+https://projetobanco-production.up.railway.app/clientes/2
+
+---------------------------------------------------------
+Daniel
+
+post /contas
+
+{
+    "agencia":1234,
+    "tipoConta": 1,
+    "saldo": 10000,
+    "titular": {
+        "idCliente": 1
+    }
+}
+
+{
+    "agencia":1234,
+    "tipoConta": 2,
+    "saldo": 1568.32,
+    "titular": {
+        "idCliente": 1
+    }
+}
+
+{
+    "agencia":1234,
+    "tipoConta": 3,
+    "saldo": 56987.25,
+    "titular": {
+        "idCliente": 1
+    }
+}
+
+
+{
+    "agencia":1235,
+    "tipoConta": 1,
+    "saldo": 24561,
+    "titular": {
+        "idCliente": 2
+    }
+}
+
+{
+    "agencia":1235,
+    "tipoConta": 2,
+    "saldo": 5785,
+    "titular": {
+        "idCliente": 2
+    }
+}
+
+{
+    "agencia":1235,
+    "tipoConta": 3,
+    "saldo": 5253.25,
+    "titular": {
+        "idCliente": 2
+    }
+}
+
+{
+    "agencia":1235,
+    "tipoConta": 1,
+    "saldo": 1000,
+    "titular": {
+        "idCliente": 3
+    }
+}
+
+{
+    "agencia":1235,
+    "tipoConta": 2,
+    "saldo": 1500,
+    "titular": {
+        "idCliente": 3
+    }
+}
+
+{
+    "agencia":1235,
+    "tipoConta": 3,
+    "saldo": 2000.25,
+    "titular": {
+        "idCliente": 3
+    }
+}
+
+
+------------------------------------------------------------------
+get conta pelo id  /contas/id
+
+https://projetobanco-production.up.railway.app/contas/1
+https://projetobanco-production.up.railway.app/contas/4
+
+------------------------------------------------------------------
+get todas as contas de um determinado cliente  /contas/cliente/id
+
+https://projetobanco-production.up.railway.app/contas/cliente/1
+https://projetobanco-production.up.railway.app/contas/cliente/2
+
+------------------------------------------------------------------
+André
+
+post movimentacao https://projetobanco-production.up.railway.app/movimentacao
+
+{
+    "valor": 1500.00,
+    "tipoOper": 1,
+    "descricao": "depósito pessoal",
+    "conta": {
+        "numeroConta": 1
+    }
+}
+
+{
+    "valor": 250.00,
+    "tipoOper": -1,
+    "descricao": "saque",
+    "conta": {
+        "numeroConta": 1
+    }
+}
+
+--------------------------------------------------------------
+get ver movimentacao pelo id  movimentacao/id (no caso seria /1)
+
+https://projetobanco-production.up.railway.app/movimentacao/1
+https://projetobanco-production.up.railway.app/movimentacao/4
+
+
+--------------------------------------------------------------
+Carlinhos
+
+post /transfencia
+
+https://projetobanco-production.up.railway.app/transferencia?contaOrigem=1&contaDestino=4&valor=200
+
+--------------------------------------------------------------
+get /extrato
+
+https://projetobanco-production.up.railway.app/extrato?conta=1&dataIni=2023-03-20&dataFim=2023-03-22
+
+https://projetobanco-production.up.railway.app/extrato?conta=4&dataIni=2023-03-20&dataFim=2023-03-22
